@@ -199,7 +199,7 @@ a {
 
 .visual_main_ex .arrow .prevArrow i {
   display: block;
-  font-size: 100px;
+  font-size: 55px;
   color: gray;
   opacity: 0.5;
   content: "\f053";
@@ -209,7 +209,7 @@ a {
 
 .visual_main_ex .arrow .nextArrow i {
   display: block;
-  font-size: 100px;
+  font-size: 55px;
   color: gray;
   opacity: 0.5;
   content: "\f054";
@@ -229,7 +229,6 @@ a {
   font-family: "Dokdo", cursive;
   text-align: center;
   margin: 20px 0;
-  font-size: 50px;
 }
 .product {
   width: 199px;
@@ -456,7 +455,6 @@ a {
   font-family: "Dokdo", cursive;
   text-align: center;
   margin: 20px 0;
-  font-size: 50px;
 }
 
 .personal_mobile {
@@ -704,7 +702,7 @@ a {
     width: 25%;
   }
 
-  .logo img {
+  .logo a img {width: 100%;
   }
 
   .gnb {
@@ -935,14 +933,11 @@ a {
 /* mobile */
 @media (max-width: 840px) {
   .header_ex {
-    /* height: 70px; */
-    /* margin-bottom: 30px; */
     overflow: visible;
   }
 
   .header_ex .wrap {
     width: 100%;
-    /* height: 80px; */
     display: flex;
     position: relative;
     justify-content: space-around;
@@ -954,7 +949,6 @@ a {
   }
 
   .header_ex .logo img {
-    /* line-height: 60px; */
     width: 100%;
   }
 
@@ -994,10 +988,6 @@ a {
     line-height: 40px;
   }
 
-  .label label {
-    /* color: purple; */
-  }
-
   .label label img {
     display: inline-block;
     width: 60px;
@@ -1006,7 +996,7 @@ a {
 
   .lnb_ham_menu {
     position: absolute;
-    top: 75px;
+    top: 60px;
     left: 0;
     width: 100%;
     height: 500px;
@@ -1032,7 +1022,6 @@ a {
   }
 
   .cart a i {
-    /* width: 100%; */
     text-align: center;
     line-height: 80px;
     display: block;
@@ -1042,7 +1031,6 @@ a {
     font-family: "Font Awesome 5 Free";
     content: "\f07a";
     border-right: 1px solid #999;
-    /* margin-right: 15px; */
     padding-right: 30px;
   }
 
@@ -1133,11 +1121,27 @@ a {
   .logo {
     width: 100%;
   }
-
-  .visual_main {
-    /* margin-top: 16px; */
+  .logo a img{
+    width: 100%;
   }
 
+  .visual_main {
+  }
+  .visual_main_ex .arrow .prevArrow {
+    top: 40%;
+  }
+
+  .visual_main_ex .arrow .nextArrow {
+    top: 40%;
+  }
+
+  .visual_main_ex .arrow .prevArrow i {
+    font-size: 50px;
+  }
+
+  .visual_main_ex .arrow .nextArrow i {
+    font-size: 50px;
+  }
   .category .category_image {
     display: none;
   }
@@ -1187,7 +1191,7 @@ a {
   .winter_img {
     display: none;
   }
-
+  .category_ex .category .product_ex{width: 100%;}
   .category_ex .category .product {
     width: calc((100% - 30px) / 3);
   }
@@ -1208,7 +1212,6 @@ a {
 
   .footer_ex .wrap .footer .footer_top .footer_top_right {
     width: 100%;
-    /* display: flex; */
   }
 
   .footer_ex .wrap .footer .footer_top .footer_top_right ul {
